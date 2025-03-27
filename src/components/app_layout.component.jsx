@@ -14,11 +14,14 @@ import {
 } from "../sections";
 
 // import { ReactLenis } from 'lenis/dist/lenis-react';
-import { ReactLenis } from "@studio-freight/react-lenis";
+
+import { connectLenisToGSAP } from "../helpers/scroll_utils";
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { useDimension } from "../hooks/useDimension";
 import Cool_hover_effect from "../ui/cool_hover_effect";
 import { cool_menu_data, cool_menu_preview_imgs } from "../data";
 import styled from "styled-components";
+import ScrollDebugger from "../ui/scroll_debugger";
 
 const AppLayout = () => {
   // const [context, set_context] = useState(null);
@@ -176,10 +179,19 @@ const AppLayout = () => {
   //   });
   // }, []);
 
+  const lenis = useLenis();
+  useEffect(() => {
+    if (lenis) {
+      const cleanup = connectLenisToGSAP(lenis);
+      return cleanup;
+    }
+  }, [lenis]);
+
   return (
     // <AppLayoutWRapper className="app_layout_wrapper">
     //   </AppLayoutWRapper>
-    <ReactLenis root options={{ lerp: 0.05 }}>
+    <ReactLenis root options={{ lerp: 0.05, smoothWheel: true }}>
+      {process.env.NODE_ENV === "development" && <ScrollDebugger />}
       <NavBar />
       <Hero />
       <About_me />
@@ -187,7 +199,7 @@ const AppLayout = () => {
       <Work />
       {/* <Testimonials /> */}
       <Testimonials />
-      {/* <MyProcess /> */}
+      <MyProcess />
       <Stats />
       <Contact />
 

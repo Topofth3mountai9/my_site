@@ -101,6 +101,7 @@ const About_me = () => {
 const AboutMeContainer = styled.section`
   min-height: 90vh;
   width: 100%;
+  margin-bottom: 12rem;
 `;
 
 const AboutMeContentContainer = styled.div`

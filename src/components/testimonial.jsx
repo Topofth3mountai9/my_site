@@ -19,7 +19,10 @@ const Testimonial = ({ testimony, name, image, occupation, rating }) => {
         </div>
       </div>
       <QuoteIcon>
-        <Quote color="#ef5539" fill="#ef5539" />
+        <Quote
+          color={`${theme.colors.brand_primary_light[600]}`}
+          fill={`${theme.colors.brand_primary_light[600]}`}
+        />
       </QuoteIcon>
     </TestimonialWrapper>
   );
@@ -30,17 +33,19 @@ export default Testimonial;
 const TestimonialWrapper = styled.div`
   position: relative;
   padding: 2rem 1.5rem;
-  background: #2b2b2b;
-  color: #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* background: #2b2b2b; */
+  background: ${({ theme }) => theme.colors.grey.h};
+  color: ${({ theme }) => theme.colors.grey.d};
+  border-radius: ${({ theme }) => theme.border_radius.sm};
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 
   p {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
+    font-size: ${({ theme }) => theme.typography.text.tiny};
     font-weight: 500;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    line-height: 1.6;
+    /* line-height: 1.6; */
   }
 
   .profile {
@@ -56,11 +61,13 @@ const TestimonialWrapper = styled.div`
 
   .name {
     color: #9ca3af;
+    color: ${({ theme }) => theme.colors.grey[400]};
     font-size: 0.85rem;
   }
 
   .occupation {
     color: #6b7280;
+    color: ${({ theme }) => theme.colors.grey[500]};
     font-size: 0.85rem;
   }
 `;

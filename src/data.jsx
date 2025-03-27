@@ -318,6 +318,123 @@ export const testimonials = [
     rating: 4,
     date: "2024-04-25",
   },
+  {
+    id: 13,
+    testimony:
+      "A fantastic experience. The team's dedication to quality is evident in their work.",
+    name: "Brandon Cooper",
+    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    occupation: "Technical Lead",
+    rating: 5,
+    date: "2024-05-10",
+  },
+  {
+    id: 14,
+    testimony:
+      "Highly professional and easy to work with. They exceeded our expectations.",
+    name: "Sophia Morgan",
+    image: "https://randomuser.me/api/portraits/women/14.jpg",
+    occupation: "Business Consultant",
+    rating: 5,
+    date: "2024-06-15",
+  },
+  {
+    id: 15,
+    testimony:
+      "The final product was outstanding. Their expertise is unmatched.",
+    name: "Nathan Carter",
+    image: "https://randomuser.me/api/portraits/men/15.jpg",
+    occupation: "Senior Developer",
+    rating: 4,
+    date: "2024-07-20",
+  },
+  {
+    id: 16,
+    testimony:
+      "Creative, efficient, and dedicated. An excellent team to work with.",
+    name: "Emma Scott",
+    image: "https://randomuser.me/api/portraits/women/16.jpg",
+    occupation: "Art Director",
+    rating: 5,
+    date: "2024-08-08",
+  },
+  {
+    id: 17,
+    testimony:
+      "They went above and beyond to meet our needs. Highly recommended.",
+    name: "Daniel Evans",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
+    occupation: "CTO, FinTech",
+    rating: 5,
+    date: "2024-09-12",
+  },
+  {
+    id: 18,
+    testimony:
+      "Their commitment to excellence is truly commendable. Great experience!",
+    name: "Ava Richardson",
+    image: "https://randomuser.me/api/portraits/women/18.jpg",
+    occupation: "Product Designer",
+    rating: 4,
+    date: "2024-10-22",
+  },
+  {
+    id: 19,
+    testimony:
+      "An amazing journey with a professional and highly skilled team.",
+    name: "Matthew Thomas",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
+    occupation: "Marketing Consultant",
+    rating: 5,
+    date: "2024-11-18",
+  },
+  {
+    id: 20,
+    testimony: "They made the entire process seamless and enjoyable.",
+    name: "Isabella Lewis",
+    image: "https://randomuser.me/api/portraits/women/20.jpg",
+    occupation: "Brand Strategist",
+    rating: 5,
+    date: "2024-12-05",
+  },
+  {
+    id: 21,
+    testimony: "Fantastic work! The results speak for themselves.",
+    name: "Ethan Walker",
+    image: "https://randomuser.me/api/portraits/men/21.jpg",
+    occupation: "Finance Advisor",
+    rating: 4,
+    date: "2025-01-10",
+  },
+  {
+    id: 22,
+    testimony:
+      "Their professionalism and expertise made a huge difference in our project.",
+    name: "Charlotte Bennett",
+    image: "https://randomuser.me/api/portraits/women/22.jpg",
+    occupation: "HR Manager",
+    rating: 5,
+    date: "2025-02-15",
+  },
+  {
+    id: 23,
+    testimony: "A smooth and efficient experience from start to finish.",
+    name: "Liam Adams",
+    image: "https://randomuser.me/api/portraits/men/23.jpg",
+    occupation: "Operations Director",
+    rating: 4,
+    date: "2025-03-10",
+  },
+  {
+    id: 24,
+    testimony:
+      "Their expertise and attention to detail made all the difference.",
+    name: "Mia Campbell",
+    image: "https://randomuser.me/api/portraits/women/24.jpg",
+    occupation: "Chief Editor",
+    rating: 5,
+    date: "2025-04-05",
+  },
 ];
 
 // export const testimonials = [

@@ -17,7 +17,7 @@ const Stat = ({ stat_text, num }) => {
     <StatWrapper className="stat_wrapper flex_items flex_column align_middle align_horizontal g_2">
       <h4 className="text_regular">{stat_text}</h4>
       <div className="vertical_line"></div>
-      <h2 className="heading_title actual_stat">{num}</h2>
+      <h2 className="heading_xl actual_stat">{num}</h2>
     </StatWrapper>
   );
 };
@@ -37,7 +37,8 @@ const Stats = () => {
       scrollTrigger: {
         trigger: ".stats_content",
         start: "top 85%",
-        end: () => `+=500rem`,
+        // end: () => `+=500rem`,
+        end: "bottom 20%",
         scrub: 2,
         // markers: true,
       },
@@ -86,7 +87,8 @@ const StatWrapper = styled.div`
   .vertical_line {
     height: 17rem;
     width: 0.2rem;
-    background: ${({ theme }) => theme.colors.primary}; //light_primary
+    background: ${({ theme }) =>
+      theme.colors.brand_primary_light[800]}; //light_primary
   }
 
   .actual_stat {

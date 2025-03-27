@@ -120,7 +120,7 @@ function Hero_with_figure_reverse({
 
   const [first_name, last_name] = name;
   return (
-    <HeroSection className="hero_section">
+    <HeroSection className="hero_section mb-80">
       {/* <OurContainer> */}
       <Section_heading_bg heading="Web developer" />
       {/* <div className="logo"></div> */}
@@ -149,7 +149,7 @@ function Hero_with_figure_reverse({
             {/* <div className="row-span-3 btn btn-primary flex_item align_middle">
               somn
             </div> */}
-            <Button size="large" toPing>
+            <Button size="large" other_class={"custom_width"} toPing>
               LET'S WORK TOGETHER
             </Button>
             {/* <Del_btn>work</Del_btn> */}
@@ -181,6 +181,7 @@ const HeroSection = styled.section`
   position: relative;
   //initially don't show anything
   opacity: 0;
+  margin-bottom: 12rem;
 `;
 
 const Banner = styled.div`
@@ -368,6 +369,10 @@ const Banner = styled.div`
     .projects_completed {
       bottom: 14rem;
       right: -4rem;
+    }
+
+    .custom_width {
+      width: 25rem;
     }
   }
 

@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
@@ -76,6 +74,19 @@ const variations = {
   `,
 };
 
+const shapes = {
+  circle: css``,
+};
+
+const widths = {
+  normal: css`
+    width: unset;
+  `,
+  full: css`
+    width: 100%;
+  `,
+};
+
 //helper height dict
 const heights = {
   small: "2rem",
@@ -90,6 +101,7 @@ const PingDot = styled.span`
   height: 0.75rem;
   width: 0.75rem;
   background-color: #10b981; /* green-500 */
+  background: ${({ theme }) => theme.colors.brand_primary_light[900]};
 `;
 
 const PingAnimation = styled.span`
@@ -99,6 +111,7 @@ const PingAnimation = styled.span`
   width: 100%;
   border-radius: 9999px;
   background-color: #34d399; /* green-400 */
+  background: ${({ theme }) => theme.colors.brand_primary_light[800]};
   opacity: 0.75;
   animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 

@@ -5,7 +5,6 @@ const Bar = styled.div`
   position: absolute;
   height: 0.3rem;
   width: 3rem;
-  /* background: ${({ theme }) => theme.colors.brand_secondary_dark[50]}; */
   background: ${({ theme }) => theme.colors.black.dark};
   transition: transform 0.3s;
 

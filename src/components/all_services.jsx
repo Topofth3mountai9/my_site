@@ -53,7 +53,7 @@ const AllServices = () => {
   useGSAP(() => {
     function move_through_services(progress = 0, set_info) {
       // set_current_progress(progress.toFixed(2));
-      let mapped_progress_top = mapper(1, progress, 4);
+      let mapped_progress_top = mapper(1, progress, 3);
       // console.log(mapped_progress_top);
 
       gsap.set(".info_slider", {

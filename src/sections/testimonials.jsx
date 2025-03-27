@@ -39,7 +39,7 @@ const Testimonials = () => {
     return () => window.removeEventListener("resize", resize);
   }, []);
   return (
-    <TestimonialsContainer className="relativ mb-96">
+    <TestimonialsContainer className="relative">
       <OurContainer>
         <div className="spacer"></div>
         <Section_header h2="HEAR FROM MY CLIENTS" />
@@ -54,19 +54,47 @@ const Testimonials = () => {
 
           {/* desktop view - parallax columns  */}
           <TestimonialColumn
-            testimonials={[testimonials[0], testimonials[1], testimonials[2]]}
+            testimonials={[
+              testimonials[0],
+              testimonials[1],
+              testimonials[2],
+              testimonials[3],
+              testimonials[4],
+              testimonials[5],
+            ]}
             y={y1}
           />
           <TestimonialColumn
-            testimonials={[testimonials[3], testimonials[4], testimonials[5]]}
+            testimonials={[
+              testimonials[6],
+              testimonials[7],
+              testimonials[8],
+              testimonials[9],
+              testimonials[10],
+              testimonials[11],
+            ]}
             y={y2}
           />
           <TestimonialColumn
-            testimonials={[testimonials[6], testimonials[7], testimonials[8]]}
+            testimonials={[
+              testimonials[13],
+              testimonials[14],
+              testimonials[14],
+              testimonials[15],
+              testimonials[16],
+              testimonials[17],
+            ]}
             y={y3}
           />
           <TestimonialColumn
-            testimonials={[testimonials[9], testimonials[10], testimonials[11]]}
+            testimonials={[
+              testimonials[18],
+              testimonials[19],
+              testimonials[20],
+              testimonials[21],
+              testimonials[22],
+              testimonials[23],
+            ]}
             y={y4}
           />
         </TestimonialsContent>
@@ -93,17 +121,19 @@ function TestimonialColumn({ testimonials, y }) {
 const TestimonialsContainer = styled.section`
   min-height: 90vh;
   width: 100%;
+  margin-bottom: 8rem;
 
   .spacer {
     height: 50vh;
   }
 `;
 const TestimonialsContent = styled.div`
-  height: 200vh;
+  height: 175vh;
   padding-inline: 2vw;
   display: flex;
   gap: 2vw;
   overflow: hidden;
+  /* overflow: visible; */
   position: relative;
 
   .section_bg_heading {
@@ -122,15 +152,19 @@ const ColumnWrapper = styled(motion.div)`
 
   &:nth-of-type(1) {
     top: -45%;
+    //top: -35%;
   }
   &:nth-of-type(2) {
     top: -95%;
+    //top: -65%;
   }
   &:nth-of-type(3) {
     top: -45%;
+    //top: -20%;
   }
   &:nth-of-type(4) {
     top: -75%;
+    //top: -50%;
   }
 `;
 
